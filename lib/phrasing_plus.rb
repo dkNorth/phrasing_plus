@@ -3,7 +3,7 @@ require 'carrierwave'
 require "phrasing_plus/engine"
 
 module PhrasingPlus
-  mattr_accessor :storage
+  attr_accessor :storage
   @storage = :file
 
   def self.configure
