@@ -20,7 +20,7 @@ function PhrasingImageWidget(options){
   };
 
   var getImageSrc = function(){
-    if($image.size() !== 0){
+    if($image.size !== 0){
       return $image.attr('src');
     }else{
       return $wrapper.css('background-image');
@@ -28,7 +28,7 @@ function PhrasingImageWidget(options){
   };
 
   var setImageSrc = function(src){
-    if($image.size() !== 0){
+    if($image.size !== 0){
       $image.attr('src', src);
     }else{
       $wrapper.css('background-image', src);
@@ -45,7 +45,7 @@ function PhrasingImageWidget(options){
     if (fileInput.files && fileInput.files[0]) {
       var reader = new FileReader();
       reader.onload = function (e) {
-        if($image.size() !== 0){
+        if($image.size !== 0){
           setImageSrc(e.target.result);
         }else{
           setImageSrc('url(' + e.target.result + ')');
@@ -98,7 +98,7 @@ function PhrasingImageWidget(options){
   };
 
   var addNewSrcToImage = function(imgSrc){
-    if($image.size() !== 0){
+    if($image.size !== 0){
       setImageSrc(imgSrc);
     }else{
       setImageSrc('url(' + imgSrc + ')');
