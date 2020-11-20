@@ -1,4 +1,4 @@
-class CreatePhrasingImages < ActiveRecord::Migration
+class CreatePhrasingImages < ActiveRecord::Migration[5.1]
   def change
     create_table :phrasing_images do |t|
       t.string :key
