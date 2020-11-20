@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", ">= 4.2.1"
   s.add_dependency "phrasing", ">= 4.0.0rc5"
-  s.add_dependency "carrierwave", "~> 0.10.0"
+  s.add_dependency "carrierwave"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "pry-rails"
